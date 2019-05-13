@@ -12,3 +12,5 @@ script: # These commands are executed in the Travis VM just like you would on yo
     - cd /home/travis/build/jmacgregor-accenture/maxJohnCI-Kata/DotNet/CIKataFrontEnd/
     # if your project has tests, you can skip "restore" and "build" and just use "test" command
     - dotnet test
+    - cd ../CIKataBackEnd/
+    - dotnet test
