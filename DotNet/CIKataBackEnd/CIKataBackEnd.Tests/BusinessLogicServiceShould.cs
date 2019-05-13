@@ -13,7 +13,7 @@ namespace CIKataBackEnd.Tests
 
             var result = businessLogicService.MakeUpValue();
             
-            result.ShouldContain("successful");
+            result.ShouldContain("apple sauce");
         }
     }
 }
