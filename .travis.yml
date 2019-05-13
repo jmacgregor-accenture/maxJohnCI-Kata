@@ -9,8 +9,8 @@ dist: xenial
 dotnet: 2.2 
 script: # These commands are executed in the Travis VM just like you would on your local machine
     # Use a "cd" command to move the Travis command line prompt into your solution directory
-    - cd /home/travis/build/jmacgregor-accenture/maxJohnCI-Kata/DotNet/CIKataFrontEnd/
+    - cd /home/travis/build/jmacgregor-accenture/maxJohnCI-Kata/DotNet/CIKataFrontEnd/CIKataFrontEnd.React/
     # if your project has tests, you can skip "restore" and "build" and just use "test" command
     - npm test
-    - cd ../CIKataBackEnd/
+    - cd ../../CIKataBackEnd/
     - dotnet test
