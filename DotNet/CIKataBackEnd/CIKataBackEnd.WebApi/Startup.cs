@@ -34,7 +34,7 @@ namespace CIKataBackEnd.WebApi
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

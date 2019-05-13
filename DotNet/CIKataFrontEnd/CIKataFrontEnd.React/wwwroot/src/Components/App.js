@@ -7,13 +7,20 @@ export default class App extends Component{
     }
 
     getInfo() {
-        fetch('url/to/api/project/endpoint')
+        fetch('http://localhost:8001/api/values')
             .then(response => response.json())
             .then(data => {
                 this.setState({result: data})})
             .catch(error => {
-                this.setState({ result: error})
+                console.log(error.toString());
+                this.setState({ result: error.toString()})
             })
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //     .then(response => response.json())
+        //     .then(json => console.log(json))
+        //     .then(data => {
+        //         this.setState({result:data})
+        //     })
     }
 
     render(){
