@@ -8,12 +8,27 @@ namespace CIKataFrontEnd.EndToEndTests
 {
     public class EndToEndTests
     {
+        private string _driverFileName = GetGeckoDriverFile();
+
+        private static string GetGeckoDriverFile()
+        {
+            var fileName = Environment.GetEnvironmentVariable("GeckoDriverName");
+
+            if (string.IsNullOrEmpty(fileName))
+            {
+                return "geckodriver";
+            }
+
+            return fileName;
+        }
+        
         [Fact]
         public void SmokeTest()
         {
+            var firefoxService = FirefoxDriverService.CreateDefaultService(Environment.CurrentDirectory, _driverFileName);
             var options = new FirefoxOptions();
             options.AddArgument("--headless");
-            var driver = new FirefoxDriver(options);
+            var driver = new FirefoxDriver(firefoxService, options);
             
             try
             {
