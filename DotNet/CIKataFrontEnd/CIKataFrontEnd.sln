@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIKataFrontEnd.React", "CIKataFrontEnd.React\CIKataFrontEnd.React.csproj", "{38B5CF18-08BD-4B65-B6E4-67B0E5D2BD3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIKataFrontEnd.EndToEndTests", "CIKataFrontEnd.EndToEndTests\CIKataFrontEnd.EndToEndTests.csproj", "{32EFCD86-C9AF-44C2-89A0-05EB7E3F2D52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{38B5CF18-08BD-4B65-B6E4-67B0E5D2BD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B5CF18-08BD-4B65-B6E4-67B0E5D2BD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B5CF18-08BD-4B65-B6E4-67B0E5D2BD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EFCD86-C9AF-44C2-89A0-05EB7E3F2D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EFCD86-C9AF-44C2-89A0-05EB7E3F2D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EFCD86-C9AF-44C2-89A0-05EB7E3F2D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EFCD86-C9AF-44C2-89A0-05EB7E3F2D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
