@@ -5,10 +5,10 @@
 
 # copy csproj and restore as distinct layers
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
-WORKDIR /.
+#WORKDIR /.
 #COPY ./certificates/server.crt ./etc/ssl/certs/server.crt
-ADD ./certificates/server.crt /etc/ssl/certs/server.crt
-RUN update-ca-certificates
+#ADD ./certificates/server.crt /etc/ssl/certs/server.crt
+#RUN update-ca-certificates
 
 WORKDIR /app
 COPY *.sln .
