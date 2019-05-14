@@ -1,14 +1,14 @@
 version: '3'
 services:
   frontend:
-    #image: jmacaccenture/ciexplore:front
-    build: './DotNet/CIKataFrontEnd'
+    image: jmacaccenture/kata_attempt_one:frontend
+    #build: './DotNet/CIKataFrontEnd'
     ports: 
       - "5001:80"
-    volumes:
-      - ./DotNet/CIKataFrontEnd/certificates/server.crt:/etc/ssl/certs/server.crt
+    #volumes:
+    #  - ./DotNet/CIKataFrontEnd/certificates/server.crt:/etc/ssl/certs/server.crt
   backend:
-   #image: jmacaccenture/ciexplore:back
-    build: './DotNet/CIKataBackEnd'
+    image: jmacaccenture/kata_attempt_one:backend
+    #build: './DotNet/CIKataBackEnd'
     ports: 
       - "8001:80"
